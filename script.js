@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const movieDetails = document.getElementById('movie-details');
   
     const API_KEY = '1b398dbb'; 
-    const API_URL = 'http://www.omdbapi.com/';
+    const API_URL = 'https://cors-anywhere.herokuapp.com/https://www.omdbapi.com/';
   
     // Fetch movie 
     async function fetchMovieData(title) {
@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
       try {
         const response = await fetch(`${API_URL}?i=${imdbID}&apikey=${API_KEY}`);
         const movie = await response.json();
+        console.log(movie);
         return movie;
       } catch (error) {
         console.error('Error fetching movie details:', error);
