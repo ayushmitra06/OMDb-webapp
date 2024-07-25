@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Fetch movie
     async function fetchMovieData(title) {
       try {
-        const response = await fetch(`${API_URL}?s=${title}&apikey=${API_KEY}`);
+        const response = await fetch(`${API_URL}?t=${title}&apikey=${API_KEY}`);
         const movies = await response.json();
         return movies;
       } catch (error) {
