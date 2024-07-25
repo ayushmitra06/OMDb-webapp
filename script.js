@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const errorMessage = document.getElementById('error-message');
     const movieDetails = document.getElementById('movie-details');
   
-    const API_KEY = '1b398dbb'
     const API_URL = 'http://www.omdbapi.com/';
+    const API_KEY = '1b398dbb'
   
     // Fetch movie
     async function fetchMovieData(title) {
