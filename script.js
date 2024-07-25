@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const API_KEY = '1b398dbb'; 
     const API_URL = 'https://www.omdbapi.com/';
   
-    // Fetch movie 
+    // Fetch movie
     async function fetchMovieData(title) {
       try {
         const response = await fetch(`${API_URL}?s=${title}&apikey=${API_KEY}`);
